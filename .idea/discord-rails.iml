@@ -134,6 +134,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sshkit (v1.24.0, asdf: 3.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stimulus-rails (v1.3.4, asdf: 3.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stringio (v3.1.5, asdf: 3.4.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tailwind_devise (v0.0.3, asdf: 3.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tailwindcss-rails (v4.2.0, asdf: 3.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tailwindcss-ruby (v4.0.14, asdf: 3.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.3.2, asdf: 3.4.1) [gem]" level="application" />
@@ -198,6 +199,7 @@
         <option value="solid_queue:install" />
         <option value="stimulus" />
         <option value="system_test" />
+        <option value="tailwind_devise:views" />
         <option value="task" />
         <option value="test_unit:authentication" />
         <option value="test_unit:channel" />
@@ -247,6 +249,7 @@
         <option value="solid_queue:install" />
         <option value="stimulus" />
         <option value="system_test" />
+        <option value="tailwind_devise:views" />
         <option value="task" />
         <option value="test_unit:authentication" />
         <option value="test_unit:channel" />
