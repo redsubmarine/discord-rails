@@ -23,14 +23,11 @@ class ServersController < ApplicationController
   def create
     @server = current_user.owned_servers.new(server_params)
 
-    respond_to do |format|
-      if @server.save
-        format.html { redirect_to @server, notice: "Server was successfully created." }
-        format.json { render :show, status: :created, location: @server }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @server.errors, status: :unprocessable_entity }
-      end
+    if @server.save
+      redirect_to root_path
+    else
+      render :new, status: :unprocessable_entity
+      render json: @server.errors, status: :unprocessable_entity
     end
   end
 
@@ -58,13 +55,14 @@ class ServersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_server
-      @server = Server.find(params.expect(:id))
-    end
 
-    # Only allow a list of trusted parameters through.
-    def server_params
-      params.expect(server: [ :name, :owner_id ])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_server
+    @server = Server.find(params.expect(:id))
+  end
+
+  # Only allow a list of trusted parameters through.
+  def server_params
+    params.expect(server: [ :name, :owner_id ])
+  end
 end
