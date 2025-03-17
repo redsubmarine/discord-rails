@@ -38,11 +38,11 @@ development:
   # domain sockets, so uncomment these lines.
   #host: localhost
 
-  # The TCP port the server listens on. Defaults to 5432.
-  # If your server runs on a different port number, change accordingly.
+  # The TCP port the servers listens on. Defaults to 5432.
+  # If your servers runs on a different port number, change accordingly.
   #port: 5432
 
-  # Schema search path. The server defaults to $user,public
+  # Schema search path. The servers defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
 
   # Minimum log levels, in increasing order:

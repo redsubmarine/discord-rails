@@ -10,9 +10,9 @@ class ServersTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Servers"
   end
 
-  test "should create server" do
+  test "should create servers" do
     visit servers_url
-    click_on "New server"
+    click_on "New servers"
 
     fill_in "Name", with: @server.name
     fill_in "Owner", with: @server.owner_id
@@ -24,7 +24,7 @@ class ServersTest < ApplicationSystemTestCase
 
   test "should update Server" do
     visit server_url(@server)
-    click_on "Edit this server", match: :first
+    click_on "Edit this servers", match: :first
 
     fill_in "Name", with: @server.name
     fill_in "Owner", with: @server.owner_id
@@ -36,7 +36,7 @@ class ServersTest < ApplicationSystemTestCase
 
   test "should destroy Server" do
     visit server_url(@server)
-    click_on "Destroy this server", match: :first
+    click_on "Destroy this servers", match: :first
 
     assert_text "Server was successfully destroyed"
   end

@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  namespace :server do
-    resources :channels
+  resources :servers do
+    scope module: :servers do
+      resources :channels
+    end
   end
-  resources :servers
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
